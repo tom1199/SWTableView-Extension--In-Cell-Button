@@ -10,7 +10,6 @@
 
 @implementation DemoTableViewCell
 
-static CGSize __cellSize;
 + (CGSize)cellSize {
     return CGSizeMake(250, 50);
 }
@@ -20,12 +19,12 @@ static CGSize __cellSize;
         _bgSprite = [CCSprite spriteWithFile:@"cell.png"];
         _bgSprite.anchorPoint = CGPointZero;
         _bgSprite.position = CGPointZero;
-        [self addChild:_bgSprite];
-        __cellSize = _bgSprite.contentSize;
+        [self addChild:_bgSprite];        
         
-        
-        CCMenuItemSprite *menuItem = [CCMenuItemSprite itemFromNormalSprite:[CCSprite spriteWithFile:@"button.png"]
-                                                             selectedSprite:nil];
+        CCMenuItemSprite *menuItem = [CCMenuItemSprite itemFromNormalSprite:[CCSprite spriteWithFile:@"button_normal.png"]
+                                                             selectedSprite:[CCSprite spriteWithFile:@"button_selected.png"] disabledSprite:[CCSprite spriteWithFile:@"button_disalbe.png"]
+                                                                     target:nil
+                                                                   selector:nil];
         self.inCellButton = menuItem;
     }
     return self;

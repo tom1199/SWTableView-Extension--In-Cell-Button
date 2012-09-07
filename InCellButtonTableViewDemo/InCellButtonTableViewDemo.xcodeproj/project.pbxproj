@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2601AD015F9D35C00B4769D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E2601ACF15F9D35C00B4769D /* README.md */; };
+		E2601AD215F9DB8B00B4769D /* button_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = E2601AD115F9DB8B00B4769D /* button_selected.png */; };
+		E2601AD415F9DBA700B4769D /* button_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = E2601AD315F9DBA700B4769D /* button_normal.png */; };
 		E28E866815F98D7D002677D0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28E866715F98D7D002677D0 /* QuartzCore.framework */; };
 		E28E866A15F98D7D002677D0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28E866915F98D7D002677D0 /* OpenGLES.framework */; };
 		E28E866C15F98D7D002677D0 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E28E866B15F98D7D002677D0 /* OpenAL.framework */; };
@@ -132,13 +135,16 @@
 		E28E87FC15F99B15002677D0 /* DemoTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E28E87FB15F99B15002677D0 /* DemoTableView.m */; };
 		E28E87FF15F99DDC002677D0 /* THInCellButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E28E87FE15F99DDC002677D0 /* THInCellButtonTableViewCell.m */; };
 		E28E880515F9A7AE002677D0 /* cell.png in Resources */ = {isa = PBXBuildFile; fileRef = E28E880415F9A7AE002677D0 /* cell.png */; };
-		E28E880715F9A7EF002677D0 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = E28E880615F9A7EF002677D0 /* button.png */; };
+		E28E880715F9A7EF002677D0 /* button_disable.png in Resources */ = {isa = PBXBuildFile; fileRef = E28E880615F9A7EF002677D0 /* button_disable.png */; };
 		E28E880A15F9A913002677D0 /* DemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E28E880915F9A913002677D0 /* DemoTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E2601ACD15F9D18900B4769D /* THInCellButtonTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THInCellButtonTableView.h; sourceTree = "<group>"; };
 		E2601ACE15F9D1B800B4769D /* THInCellButtonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THInCellButtonTableViewCell.h; sourceTree = "<group>"; };
+		E2601ACF15F9D35C00B4769D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		E2601AD115F9DB8B00B4769D /* button_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_selected.png; sourceTree = "<group>"; };
+		E2601AD315F9DBA700B4769D /* button_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_normal.png; sourceTree = "<group>"; };
 		E28E866315F98D7D002677D0 /* InCellButtonTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InCellButtonTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28E866715F98D7D002677D0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E28E866915F98D7D002677D0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -391,7 +397,7 @@
 		E28E87FB15F99B15002677D0 /* DemoTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableView.m; sourceTree = "<group>"; };
 		E28E87FE15F99DDC002677D0 /* THInCellButtonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THInCellButtonTableViewCell.m; sourceTree = "<group>"; };
 		E28E880415F9A7AE002677D0 /* cell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell.png; sourceTree = "<group>"; };
-		E28E880615F9A7EF002677D0 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		E28E880615F9A7EF002677D0 /* button_disable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_disable.png; sourceTree = "<group>"; };
 		E28E880815F9A913002677D0 /* DemoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewCell.h; sourceTree = "<group>"; };
 		E28E880915F9A913002677D0 /* DemoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -450,6 +456,7 @@
 		E28E867715F98D7D002677D0 /* InCellButtonTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E2601ACF15F9D35C00B4769D /* README.md */,
 				E28E87C915F98D80002677D0 /* AppDelegate.h */,
 				E28E87CA15F98D80002677D0 /* AppDelegate.m */,
 				E28E87CC15F98D80002677D0 /* RootViewController.h */,
@@ -475,7 +482,9 @@
 		E28E867815F98D7D002677D0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E28E880615F9A7EF002677D0 /* button.png */,
+				E2601AD315F9DBA700B4769D /* button_normal.png */,
+				E28E880615F9A7EF002677D0 /* button_disable.png */,
+				E2601AD115F9DB8B00B4769D /* button_selected.png */,
 				E28E880415F9A7AE002677D0 /* cell.png */,
 				E28E867915F98D7D002677D0 /* Default.png */,
 				E28E867B15F98D7D002677D0 /* fps_images.png */,
@@ -882,7 +891,10 @@
 				E28E868815F98D7D002677D0 /* Icon@2x.png in Resources */,
 				E28E868B15F98D7D002677D0 /* iTunesArtwork in Resources */,
 				E28E880515F9A7AE002677D0 /* cell.png in Resources */,
-				E28E880715F9A7EF002677D0 /* button.png in Resources */,
+				E28E880715F9A7EF002677D0 /* button_disable.png in Resources */,
+				E2601AD015F9D35C00B4769D /* README.md in Resources */,
+				E2601AD215F9DB8B00B4769D /* button_selected.png in Resources */,
+				E2601AD415F9DBA700B4769D /* button_normal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
