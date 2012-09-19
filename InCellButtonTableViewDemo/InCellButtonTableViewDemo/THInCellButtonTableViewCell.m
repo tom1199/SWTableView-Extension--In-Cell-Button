@@ -6,7 +6,8 @@
 //
 
 #import "THInCellButtonTableViewCell.h"
-
+#define MIN_TOUCH_AREA_WIDTH    30
+#define MIN_TOUCH_AREA_HEIGHT   30
 
 @implementation THInCellButtonTableViewCell
 #pragma mark - 
@@ -19,12 +20,12 @@
 - (BOOL)isInCellButtonContainsTouch:(UITouch *)touch {
     //expend touch area if button too small
     CGRect originalRect = [self buttonRect];
-//    CGPoint touchAreaInset;
-//    touchAreaInset.x = originalRect.size.width - MAX(originalRect.size.width, MIN_TOUCH_AREA_WIDTH);
-//    touchAreaInset.y = originalRect.size.height - MAX(originalRect.size.height, MIN_TOUCH_AREA_HEIGHT);
-//    CGRect expendedTouchRegionRect = CGRectInset(originalRect, touchAreaInset.x, touchAreaInset.y);
+    CGPoint touchAreaInset;
+    touchAreaInset.x = originalRect.size.width - MAX(originalRect.size.width, MIN_TOUCH_AREA_WIDTH);
+    touchAreaInset.y = originalRect.size.height - MAX(originalRect.size.height, MIN_TOUCH_AREA_HEIGHT);
+    CGRect expendedTouchRegionRect = CGRectInset(originalRect, touchAreaInset.x, touchAreaInset.y);
     
-    return CGRectContainsPoint(/*expendedTouchRegionRect*/originalRect, [self convertTouchToNodeSpaceAR:touch]);
+    return CGRectContainsPoint(expendedTouchRegionRect, [self convertTouchToNodeSpaceAR:touch]);
 }
 - (void)setInCellButton:(CCMenuItemSprite *)inCellButton {
     if (_inCellButton) {
